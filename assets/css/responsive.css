@@ -1,0 +1,112 @@
+/* ===============================
+   TABLETS (<= 992px)
+================================= */
+@media (max-width: 992px) {
+
+    .services__grid,
+    .testimonials__grid,
+    .team__grid,
+    .footer__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .before-after__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact__container {
+        flex-direction: column;
+    }
+}
+
+/* ===============================
+   MOBILE (<= 768px)
+================================= */
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    .navbar__menu {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #000;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        padding: 20px 0;
+    }
+
+    .navbar__menu.active {
+        display: flex;
+    }
+
+    .navbar__toggle {
+        display: flex;
+    }
+
+    .navbar__cta {
+        display: none;
+    }
+
+    /* HEADER */
+    .header__container {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+
+    /* HERO */
+    .hero__title {
+        font-size: 2rem;
+    }
+
+    .hero__content {
+        padding: 20px;
+    }
+
+    /* GRID ADJUSTMENTS */
+    .services__grid,
+    .testimonials__grid,
+    .team__grid,
+    .gallery__grid,
+    .footer__container {
+        grid-template-columns: 1fr;
+    }
+
+    .before-after__grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* TYPOGRAPHY */
+    .section__title {
+        font-size: 1.8rem;
+    }
+}
+
+/* ===============================
+   SMALL DEVICES (<= 480px)
+================================= */
+@media (max-width: 480px) {
+
+    .hero__title {
+        font-size: 1.6rem;
+    }
+
+    .page-hero__content h1 {
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.85rem;
+    }
+
+    input, textarea {
+        padding: 10px;
+    }
+}

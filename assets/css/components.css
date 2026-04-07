@@ -1,0 +1,281 @@
+/* ===============================
+   NAVBAR
+================================= */
+.service-card,
+.testimonial,
+.team-card {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    padding: 25px;
+    transition: 0.4s;
+}
+
+.service-card:hover,
+.gallery-item:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.6);
+}
+
+.btn--primary {
+    background: linear-gradient(45deg, var(--gold), var(--gold-light));
+    color: #000;
+    border-radius: 30px;
+    padding: 12px 30px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn--primary:hover {
+    transform: scale(1.05);
+}
+
+.navbar {
+    background: #000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #222;
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.navbar__logo img {
+    height: 40px;
+}
+
+.navbar__menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar__link {
+    color: #fff;
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+
+.navbar__link:hover {
+    color: var(--primary-color);
+}
+
+.navbar__cta {
+    margin-left: 20px;
+}
+
+/* Mobile Toggle */
+.navbar__toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.navbar__toggle span {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    margin: 4px 0;
+}
+
+/* ===============================
+   HEADER
+================================= */
+.header {
+    background: #111;
+    border-bottom: 1px solid #222;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    font-size: 0.85rem;
+}
+
+.header__info span {
+    margin-right: 15px;
+    color: var(--text-muted);
+}
+
+.header__branding {
+    text-align: center;
+}
+
+.header__branding h1 {
+    font-size: 1.5rem;
+}
+
+.header__branding p {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.header__social img {
+    width: 18px;
+    margin-left: 10px;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.header__social img:hover {
+    opacity: 1;
+}
+
+/* ===============================
+   FOOTER
+================================= */
+.footer__section h3,
+.footer__section h4 {
+    margin-bottom: 10px;
+}
+
+.footer__section p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.footer__section ul {
+    list-style: none;
+}
+
+.footer__section ul li {
+    margin-bottom: 6px;
+}
+
+.footer__section ul li a {
+    color: var(--text-muted);
+    transition: 0.3s;
+}
+
+.footer__section ul li a:hover {
+    color: var(--primary-color);
+}
+
+.footer__social img {
+    width: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.footer__social img:hover {
+    opacity: 1;
+}
+
+/* ===============================
+   CARDS & ELEMENTS
+================================= */
+.gallery-item img,
+.before-after-card img {
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.gallery-item img:hover,
+.before-after-card img:hover {
+    transform: scale(1.05);
+}
+
+.testimonial p {
+    font-style: italic;
+    color: var(--text-muted);
+}
+
+.testimonial h4 {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.team-card h3 {
+    margin-top: 10px;
+}
+
+.team-card p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* ===============================
+   FORM
+================================= */
+input, textarea {
+    background: #1a1a1a;
+    color: #fff;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #888;
+}
+
+.btn--primary {
+    background: linear-gradient(45deg, #d4af37, #f5d76e);
+    color: #000;
+    border-radius: 50px;
+    padding: 14px 35px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 5px 20px rgba(212,175,55,0.4);
+    transition: 0.3s;
+}
+
+.btn--primary:hover {
+    transform: translateY(-3px) scale(1.05);
+}
+
+.btn--primary {
+    background: linear-gradient(45deg, #d4af37, #f5d76e);
+    color: #000;
+    border-radius: 50px;
+    padding: 14px 35px;
+    font-weight: 600;
+    box-shadow: 0 0 20px rgba(212,175,55,0.6);
+    transition: 0.3s;
+}
+
+.btn--primary:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 40px rgba(212,175,55,0.9);
+}
+
+
+.btn--primary {
+    background: #d4af37;
+    color: #000;
+    border-radius: 50px;
+    padding: 14px 35px;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+/* Soft glow layer */
+.btn--primary::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    background: #d4af37;
+    filter: blur(20px);
+    opacity: 0.6;
+    z-index: -1;
+}
+
+/* Hover effect */
+.btn--primary:hover {
+    transform: translateY(-2px) scale(1.03);
+}
+
+.btn--primary:hover::before {
+    opacity: 0.9;
+    filter: blur(25px);
+}
